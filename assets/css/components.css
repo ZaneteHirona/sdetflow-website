@@ -1,0 +1,64 @@
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; padding: 0 22px; border: 1px solid transparent; border-radius: 11px; font-weight: 720; font-size: 14px; letter-spacing: -0.01em; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid rgba(220, 91, 148, 0.5); outline-offset: 3px; }
+.button-small { min-height: 40px; padding: 0 17px; font-size: 13px; }
+.button-primary { background: var(--gradient); color: #fff; box-shadow: 0 12px 28px rgba(195, 75, 125, 0.22); }
+.button-primary:hover { box-shadow: 0 16px 36px rgba(195, 75, 125, 0.34); }
+.button-secondary { border-color: var(--line-strong); background: rgba(255, 255, 255, 0.035); color: #fff; }
+.button-secondary:hover { background: rgba(255, 255, 255, 0.07); border-color: rgba(255, 255, 255, 0.25); }
+.button-secondary svg { width: 18px; }
+.button-light { background: #fff; color: #140b1b; }
+.button-dark { background: rgba(14, 5, 25, 0.48); color: #fff; border-color: rgba(255, 255, 255, 0.22); }
+
+.check-list { list-style: none; padding: 0; margin: 25px 0; }
+.check-list li { position: relative; padding: 6px 0 6px 28px; color: #c7c0ce; }
+.check-list li::before { content: "âœ“"; position: absolute; left: 0; color: var(--green); font-weight: 850; }
+.inline-link, .capability-card a { color: #e36a9d; font-size: 14px; font-weight: 750; }
+.inline-link span, .capability-card a span { display: inline-block; transition: transform 0.2s ease; }
+.inline-link:hover span, .capability-card a:hover span { transform: translateX(4px); }
+
+.metric-card, .panel { border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 255, 255, 0.026); }
+.metric-card { padding: 14px; }
+.metric-card > span { display: block; color: #898092; font-size: 9px; }
+.metric-card strong { display: block; margin: 6px 0 1px; font-size: 25px; line-height: 1; letter-spacing: -0.04em; }
+.metric-card strong span { color: #7e758b; font-size: 12px; font-weight: 600; }
+.metric-card small { color: #777080; font-size: 8px; }
+.metric-card small.positive { color: var(--green); }
+.panel-heading { display: flex; justify-content: space-between; align-items: center; min-height: 40px; padding: 0 14px; border-bottom: 1px solid var(--line); color: #c8c1d0; font-size: 10px; font-weight: 650; }
+.panel-menu { color: #655d71; }
+
+.card-icon { width: 43px; height: 43px; display: grid; place-items: center; border-radius: 12px; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2); }
+.card-icon svg { width: 21px; fill: none; stroke: #fff; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.gradient-purple { background: linear-gradient(135deg, #7b4cc4, #a85fc8); }
+.gradient-pink { background: linear-gradient(135deg, #aa3f75, #d85b93); }
+.gradient-orange { background: linear-gradient(135deg, #d5516d, #f17b59); }
+.gradient-violet { background: linear-gradient(135deg, #6b59c8, #a64cc2); }
+.gradient-rose { background: linear-gradient(135deg, #b53d73, #e76785); }
+.gradient-blue { background: linear-gradient(135deg, #525fbf, #8f5cd5); }
+
+.feature-visual, .platform-visual { position: relative; min-height: 440px; border: 1px solid var(--line); border-radius: 24px; background: radial-gradient(circle at 70% 10%, rgba(166, 87, 196, 0.15), transparent 38%), #0b071c; box-shadow: var(--shadow); overflow: hidden; }
+.signal-core, .signal-node { position: absolute; z-index: 2; border: 1px solid var(--line); background: rgba(13, 8, 29, 0.9); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35); }
+.signal-node { width: 122px; padding: 13px 15px; border-radius: 12px; }
+.signal-node span, .signal-node strong { display: block; }
+.signal-node span { color: #777080; font-size: 9px; }
+.signal-node strong { margin-top: 3px; font-size: 12px; }
+
+.capability-card, .capabilities-card { min-height: 300px; display: flex; flex-direction: column; padding: 27px; border: 1px solid var(--line); border-radius: 18px; background: linear-gradient(145deg, rgba(255, 255, 255, 0.034), rgba(255, 255, 255, 0.014)); transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease; }
+.capability-card:hover, .capabilities-card:hover { transform: translateY(-6px); border-color: rgba(220, 91, 148, 0.28); background: linear-gradient(145deg, rgba(166, 87, 196, 0.07), rgba(195, 75, 125, 0.025)); }
+.capability-card h3, .capabilities-card h3 { margin: 25px 0 10px; font-size: 20px; letter-spacing: -0.03em; }
+.capability-card p, .capabilities-card p { margin: 0 0 25px; color: var(--muted); font-size: 14px; }
+.capability-card a, .capabilities-card a { margin-top: auto; }
+
+.workflow-tabs { display: grid; grid-template-columns: repeat(5, 1fr); border-bottom: 1px solid var(--line); }
+.workflow-tabs button { position: relative; padding: 17px; border: 0; background: transparent; color: #777080; font-weight: 700; cursor: pointer; }
+.workflow-tabs button::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--gradient); transform: scaleX(0); transition: transform 0.25s ease; }
+.workflow-tabs button[aria-selected="true"] { color: #fff; }
+.workflow-tabs button[aria-selected="true"]::after { transform: scaleX(1); }
+.workflow-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; align-items: center; min-height: 380px; padding: 60px; border: 1px solid var(--line); border-top: 0; border-radius: 0 0 22px 22px; background: linear-gradient(135deg, rgba(166, 87, 196, 0.06), rgba(255, 255, 255, 0.015)); }
+.workflow-label { color: #d65c94; font-size: 11px; font-weight: 850; letter-spacing: 0.13em; }
+.workflow-panel h3 { margin: 12px 0; font-size: 32px; letter-spacing: -0.04em; }
+.workflow-panel p { color: var(--muted); }
+.workflow-visual { min-height: 190px; padding: 30px; display: flex; align-items: center; justify-content: center; gap: 14px; border: 1px solid var(--line); border-radius: 16px; background: #090518; }
+.flow-node { padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; color: #9b93a6; background: rgba(255, 255, 255, 0.025); font-size: 12px; }
+.flow-node.active { color: #fff; border-color: rgba(220, 91, 148, 0.4); background: rgba(195, 75, 125, 0.1); box-shadow: 0 0 28px rgba(195, 75, 125, 0.12); }
+.flow-arrow { color: #5c5467; }
