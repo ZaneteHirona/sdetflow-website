@@ -1,463 +1,94 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="SDETFlow is a quality engineering platform for test design, live insights, resilience validation and release guardrails." />
-  <meta name="theme-color" content="#050012" />
-  <title>SDETFlow — Quality Engineering, made visible</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zanete: Software Engineer with experience in backend development, AWS, distributed systems and test automation. Growing in cloud, platform engineering and AI-driven development.">
+  <title>Zanete | Software Engineer</title>
+  <link rel="stylesheet" href="assets/css/portfolio.css?v=monochrome-2">
+  <link rel="stylesheet" href="assets/css/profile.css?v=monochrome-2">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- Site header -->
-  <header class="site-header" data-header>
-    <div class="container nav-shell">
-      <a class="brand" href="#top" aria-label="SDETFlow home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" role="img">
-            <path d="M20 3 33 10.5v15L20 33 7 25.5v-15L20 3Z" fill="url(#logoGradient)" />
-            <path d="M14.4 13.2h11.2v4.2h-7v2.1h5.9v4h-5.9v3.3h-4.2V13.2Z" fill="#fff" />
-            <defs>
-              <linearGradient id="logoGradient" x1="7" y1="5" x2="35" y2="35" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#A657C4" />
-                <stop offset=".5" stop-color="#C34B7D" />
-                <stop offset="1" stop-color="#F16759" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </span>
-        <span>SDET<span>Flow</span></span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
-        <span class="sr-only">Toggle navigation</span>
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-nav>
-        <a href="#platform">Platform</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#integrations">Integrations</a>
-        <a href="#resources">Resources</a>
-        <a href="#security">Security</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a class="text-link" href="#demo">Sign in</a>
-        <a class="button button-small button-primary" href="#demo">Start free</a>
-      </div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap">
+  <a class="brand" href="#main" aria-label="Zanete home">zanete<span>_</span></a>
+  <nav aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact &#8599;</a></nav>
+</header>
+<main id="main">
+  <section class="portrait-hero" aria-labelledby="hero-title">
+    <img class="hero-portrait" src="assets/portrait-black-shirt.png" alt="Conceptual portrait wearing a realistic black shirt, with long hair, a colorful painted half-face and a robotic wireframe half.">
+    <div class="portrait-copy portrait-left">
+      <span class="label">SOFTWARE ENGINEER</span>
+      <h1 id="hero-title">developer<span>.</span></h1>
+      <p>Building reliable software.<br>Backend services, cloud infrastructure<br>and systems that connect.</p>
+      <a href="#experience">Explore my experience &#8594;</a>
     </div>
-  </header>
-
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
-      <div class="grid-noise" aria-hidden="true"></div>
-
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow">
-            <span class="eyebrow-dot"></span>
-            The operating system for modern quality engineering
-          </div>
-          <h1 id="hero-title">See risk clearly.<br /><span>Release with confidence.</span></h1>
-          <p class="hero-lead">
-            Design smarter tests, validate real system behaviour, and turn quality signals into decisions your whole engineering organisation can trust.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#demo">Start building free</a>
-            <a class="button button-secondary" href="#platform">
-              Explore the platform
-              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
-            </a>
-          </div>
-          <div class="hero-proof" aria-label="Platform highlights">
-            <span>No credit card</span>
-            <span>OpenTelemetry ready</span>
-            <span>Works with your stack</span>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal reveal-delay" aria-label="SDETFlow quality dashboard preview">
-          <div class="dashboard-window">
-            <div class="window-bar">
-              <div class="window-controls" aria-hidden="true"><span></span><span></span><span></span></div>
-              <div class="window-title">Release confidence / production</div>
-              <div class="live-pill"><span></span>Live</div>
-            </div>
-            <div class="dashboard-body">
-              <aside class="dashboard-sidebar" aria-label="Dashboard navigation">
-                <div class="mini-logo">F</div>
-                <button class="side-item active" aria-label="Overview"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></button>
-                <button class="side-item" aria-label="Tests"><svg viewBox="0 0 24 24"><path d="m7 12 3 3 7-7"/><circle cx="12" cy="12" r="9"/></svg></button>
-                <button class="side-item" aria-label="Metrics"><svg viewBox="0 0 24 24"><path d="M4 19V9m6 10V5m6 14v-7m4 7V3"/></svg></button>
-                <button class="side-item" aria-label="Incidents"><svg viewBox="0 0 24 24"><path d="M12 3 2.8 19h18.4L12 3Z"/><path d="M12 9v4m0 3h.01"/></svg></button>
-              </aside>
-
-              <div class="dashboard-content">
-                <div class="dashboard-heading">
-                  <div>
-                    <span class="micro-label">QUALITY OVERVIEW</span>
-                    <h2>Production readiness</h2>
-                  </div>
-                  <div class="period-selector">Last 24 hours <span>⌄</span></div>
-                </div>
-
-                <div class="metric-row">
-                  <article class="metric-card">
-                    <span>Release score</span>
-                    <strong>94<span>/100</span></strong>
-                    <small class="positive">↑ 7.2% this week</small>
-                  </article>
-                  <article class="metric-card">
-                    <span>Critical journeys</span>
-                    <strong>28<span>/30</span></strong>
-                    <small>2 need attention</small>
-                  </article>
-                  <article class="metric-card">
-                    <span>Flaky tests</span>
-                    <strong>1.8<span>%</span></strong>
-                    <small class="positive">↓ 0.6% this week</small>
-                  </article>
-                </div>
-
-                <div class="dashboard-grid">
-                  <article class="panel chart-panel">
-                    <div class="panel-heading"><span>Customer journey health</span><span class="panel-menu">•••</span></div>
-                    <div class="chart-area" aria-hidden="true">
-                      <div class="chart-axis"><span>100</span><span>75</span><span>50</span><span>25</span></div>
-                      <svg viewBox="0 0 520 190" preserveAspectRatio="none">
-                        <defs>
-                          <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0" stop-color="#C74C82" stop-opacity=".45"/>
-                            <stop offset="1" stop-color="#C74C82" stop-opacity="0"/>
-                          </linearGradient>
-                        </defs>
-                        <path d="M0 148 C35 138 48 76 84 88 S126 132 165 91 216 73 250 83 299 48 332 62 382 121 418 88 468 42 520 56 L520 190 L0 190 Z" fill="url(#areaFill)" />
-                        <path d="M0 148 C35 138 48 76 84 88 S126 132 165 91 216 73 250 83 299 48 332 62 382 121 418 88 468 42 520 56" fill="none" stroke="#DC5B94" stroke-width="4" stroke-linecap="round" />
-                        <path d="M0 120 C54 112 75 128 120 107 S183 130 228 112 294 125 340 100 401 109 448 91 492 101 520 79" fill="none" stroke="#8F5CD5" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 8" opacity=".9" />
-                      </svg>
-                      <div class="chart-x"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>Now</span></div>
-                    </div>
-                  </article>
-
-                  <article class="panel risk-panel">
-                    <div class="panel-heading"><span>Release risks</span><span class="risk-count">3</span></div>
-                    <div class="risk-list">
-                      <div class="risk-item"><span class="severity high"></span><div><strong>Payment timeout</strong><small>p99 exceeded target</small></div><span>12m</span></div>
-                      <div class="risk-item"><span class="severity medium"></span><div><strong>Quote API</strong><small>Rate-limit threshold</small></div><span>24m</span></div>
-                      <div class="risk-item"><span class="severity low"></span><div><strong>Safari checkout</strong><small>Visual diff detected</small></div><span>1h</span></div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container hero-social-proof customer-strip reveal" aria-label="Teams using SDETFlow">
-        <span>Built for engineering teams that ship continuously</span>
-        <div class="hero-logo-row logo-row" aria-hidden="true">
-          <strong>VELOCITY</strong><strong>ORBITAL</strong><strong>APEX</strong><strong>NORTHSTAR</strong><strong>POLARIS</strong><strong>ARC</strong>
-        </div>
-      </div>
-    </section>
-
-    <!-- Platform value -->
-    <section class="section value-section" id="platform" aria-labelledby="value-title">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <span class="kicker">ONE QUALITY PLATFORM</span>
-          <h2 id="value-title">Connect the signals. Understand the risk.<br /><span>Improve the system.</span></h2>
-          <p>Replace scattered evidence and manual release checks with a shared, real-time view of product quality.</p>
-        </div>
-
-        <div class="platform-showcase feature-showcase reveal">
-          <div class="platform-copy feature-copy">
-            <span class="feature-number">01</span>
-            <h3>Useful AI, grounded in your system</h3>
-            <p>Generate test scenarios from requirements, map them to production risks, and explain failures using traces, logs, metrics, code changes and historical behaviour.</p>
-            <ul class="check-list">
-              <li>Risk-based test design</li>
-              <li>Failure clustering and root-cause hints</li>
-              <li>Human-reviewed recommendations</li>
-            </ul>
-            <a class="inline-link" href="#capabilities">Explore AI Test Architect <span>→</span></a>
-          </div>
-          <div class="platform-visual feature-visual ai-console" aria-label="AI test architect preview">
-            <div class="console-top"><span class="status-dot"></span>AI Test Architect <small>Context: checkout-service</small></div>
-            <div class="prompt-card">
-              <span class="avatar user-avatar">ZH</span>
-              <p>Design tests for a payment service that can time out, retry, receive duplicate events and exceed provider rate limits.</p>
-            </div>
-            <div class="response-card">
-              <span class="avatar ai-avatar">✦</span>
-              <div>
-                <strong>Created 14 risk-based scenarios</strong>
-                <div class="scenario-tags"><span>Idempotency</span><span>Timeouts</span><span>Retries</span><span>Rate limits</span></div>
-                <div class="code-preview">
-                  <span>Given</span> a payment request is processing<br />
-                  <span>When</span> the provider response exceeds 5s<br />
-                  <span>Then</span> the request remains idempotent<br />
-                  <span>And</span> the retry policy emits one outcome
-                </div>
-                <button class="ghost-action" type="button">Add to test plan</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="platform-showcase feature-showcase reverse reveal">
-          <div class="platform-copy feature-copy">
-            <span class="feature-number">02</span>
-            <h3>Quality evidence that updates itself</h3>
-            <p>Unify automated tests, synthetic journeys, deployment data and production telemetry so teams can answer one question: “Is this change safe?”</p>
-            <ul class="check-list">
-              <li>Live release confidence scores</li>
-              <li>Customer-journey health</li>
-              <li>Failure trends and flaky-test ownership</li>
-            </ul>
-            <a class="inline-link" href="#capabilities">See live quality insights <span>→</span></a>
-          </div>
-          <div class="platform-visual feature-visual signal-map" aria-label="Quality signal map preview">
-            <div class="signal-core">
-              <span>Release</span>
-              <strong>94</strong>
-              <small>Ready</small>
-            </div>
-            <div class="signal-node node-one"><span>API</span><strong>99.98%</strong></div>
-            <div class="signal-node node-two"><span>UI journeys</span><strong>28/30</strong></div>
-            <div class="signal-node node-three"><span>Resilience</span><strong>Passed</strong></div>
-            <div class="signal-node node-four"><span>Security</span><strong>0 critical</strong></div>
-            <svg class="signal-lines" viewBox="0 0 600 420" aria-hidden="true">
-              <path d="M300 210 C240 170 205 120 145 90" />
-              <path d="M300 210 C365 170 405 120 465 90" />
-              <path d="M300 210 C238 260 205 315 145 342" />
-              <path d="M300 210 C365 260 405 315 465 342" />
-            </svg>
-          </div>
-        </div>
-
-        <div class="platform-showcase feature-showcase reveal">
-          <div class="platform-copy feature-copy">
-            <span class="feature-number">03</span>
-            <h3>Guardrails that help teams move faster</h3>
-            <p>Define evidence-based quality policies for each service and journey. Block only meaningful risk, and make every decision transparent.</p>
-            <ul class="check-list">
-              <li>Service-specific release policies</li>
-              <li>Actionable failure ownership</li>
-              <li>Auditable exceptions and approvals</li>
-            </ul>
-            <a class="inline-link" href="#security">Review quality guardrails <span>→</span></a>
-          </div>
-          <div class="platform-visual feature-visual policy-board" aria-label="Quality guardrails preview">
-            <div class="policy-header"><span>Release policy</span><span class="policy-state">Enforced</span></div>
-            <div class="policy-rule"><div><span class="rule-icon pass">✓</span><strong>Critical journeys</strong><small>100% passing in target browsers</small></div><span>30 / 30</span></div>
-            <div class="policy-rule"><div><span class="rule-icon pass">✓</span><strong>Performance budget</strong><small>p95 under 800ms</small></div><span>642ms</span></div>
-            <div class="policy-rule"><div><span class="rule-icon warning">!</span><strong>Flaky test budget</strong><small>Must remain below 2%</small></div><span>1.8%</span></div>
-            <div class="policy-rule"><div><span class="rule-icon pass">✓</span><strong>Critical vulnerabilities</strong><small>No unresolved critical findings</small></div><span>0</span></div>
-            <div class="policy-footer"><span>Policy evaluated 34 seconds ago</span><button type="button">View evidence</button></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Capabilities -->
-    <section class="section capabilities-section" id="capabilities" aria-labelledby="capabilities-title">
-      <div class="container">
-        <div class="section-heading split reveal">
-          <div>
-            <span class="kicker">OBSERVE EVERYTHING THAT AFFECTS QUALITY</span>
-            <h2 id="capabilities-title">From test code to customer experience.</h2>
-          </div>
-          <p>One platform for the work SDETs already do — testability, automation, reliability, resilience and production feedback — without creating another silo.</p>
-        </div>
-
-        <div class="capabilities-grid capability-grid">
-          <article class="capabilities-card capability-card reveal">
-            <div class="card-icon gradient-purple"><svg viewBox="0 0 24 24"><path d="M4 19 9 14l4 4 7-9"/><path d="M15 9h5v5"/></svg></div>
-            <h3>Live Quality Insights</h3>
-            <p>Correlate test, deployment and production signals into release confidence your teams can act on.</p>
-            <a href="#demo">Explore insights <span>→</span></a>
-          </article>
-          <article class="capabilities-card capability-card reveal">
-            <div class="card-icon gradient-pink"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 4.7 3.3 7.7 8 9 4.7-1.3 8-4.3 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg></div>
-            <h3>Quality Guardrails</h3>
-            <p>Encode quality expectations as transparent, service-aware release policies instead of brittle global gates.</p>
-            <a href="#demo">Define policies <span>→</span></a>
-          </article>
-          <article class="capabilities-card capability-card reveal">
-            <div class="card-icon gradient-orange"><svg viewBox="0 0 24 24"><path d="M4 17c3-8 13-8 16 0"/><path d="M8 17c2-4 6-4 8 0"/><circle cx="12" cy="17" r="1"/></svg></div>
-            <h3>Synthetic Journeys</h3>
-            <p>Continuously validate critical customer paths across regions, browsers, devices and APIs.</p>
-            <a href="#demo">Monitor journeys <span>→</span></a>
-          </article>
-          <article class="capabilities-card capability-card reveal">
-            <div class="card-icon gradient-violet"><svg viewBox="0 0 24 24"><path d="M7 4h10l2 5-7 11L5 9l2-5Z"/><path d="M5 9h14M9 4l3 16 3-16"/></svg></div>
-            <h3>Resilience Lab</h3>
-            <p>Test timeouts, retries, rate limits, dependency failures and scaling behaviour before customers find the edge cases.</p>
-            <a href="#demo">Run experiments <span>→</span></a>
-          </article>
-          <article class="capabilities-card capability-card reveal">
-            <div class="card-icon gradient-rose"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
-            <h3>Performance Engineering</h3>
-            <p>Detect bottlenecks, enforce budgets and compare release behaviour under realistic traffic profiles.</p>
-            <a href="#demo">Measure performance <span>→</span></a>
-          </article>
-          <article class="capabilities-card capability-card reveal">
-            <div class="card-icon gradient-blue"><svg viewBox="0 0 24 24"><path d="M6 3h12v18H6z"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div>
-            <h3>Test Intelligence</h3>
-            <p>Find duplication, flaky ownership, coverage gaps and the tests most relevant to each code change.</p>
-            <a href="#demo">Improve the suite <span>→</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Integrations -->
-    <section class="section integrations-section" id="integrations" aria-labelledby="integrations-title">
-      <div class="container integrations-grid">
-        <div class="integrations-copy integration-copy reveal">
-          <span class="kicker">PLUG IN, DON’T RIP OUT</span>
-          <h2 id="integrations-title">Your tools stay. Your quality signals finally connect.</h2>
-          <p>Bring together the systems your teams already trust. SDETFlow is designed around open APIs, webhooks and OpenTelemetry so adoption can happen incrementally.</p>
-          <div class="integrations-stats integration-stats">
-            <div><strong>50+</strong><span>ready-to-use connectors</span></div>
-            <div><strong>100%</strong><span>API-first workflows</span></div>
-          </div>
-          <a class="button button-secondary" href="#demo">Browse integrations</a>
-        </div>
-
-        <div class="integrations-orbit integration-orbit reveal" aria-label="Supported integrations">
-          <div class="integrations-orbit-ring orbit orbit-one"></div>
-          <div class="integrations-orbit-ring orbit orbit-two"></div>
-          <div class="integrations-center integration-center">SDET<span>Flow</span></div>
-          <div class="integrations-tool tool tool-github" title="GitHub">GH</div>
-          <div class="integrations-tool tool tool-gitlab" title="GitLab">GL</div>
-          <div class="integrations-tool tool tool-aws" title="AWS">AWS</div>
-          <div class="integrations-tool tool tool-k8s" title="Kubernetes">K8s</div>
-          <div class="integrations-tool tool tool-playwright" title="Playwright">PW</div>
-          <div class="integrations-tool tool tool-jira" title="Jira">J</div>
-          <div class="integrations-tool tool tool-slack" title="Slack">S</div>
-          <div class="integrations-tool tool tool-otel" title="OpenTelemetry">OTel</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Workflow -->
-    <section class="section workflow-section" aria-labelledby="workflow-title">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <span class="kicker">A WORKFLOW THE WHOLE POD CAN USE</span>
-          <h2 id="workflow-title">Quality is not a final gate.<br /><span>It is a continuous engineering signal.</span></h2>
-        </div>
-        <div class="workflow-tabs reveal" role="tablist" aria-label="Quality workflow stages">
-          <button role="tab" aria-selected="true" aria-controls="plan-panel" id="plan-tab" data-tab="plan">Plan</button>
-          <button role="tab" aria-selected="false" aria-controls="build-panel" id="build-tab" data-tab="build">Build</button>
-          <button role="tab" aria-selected="false" aria-controls="validate-panel" id="validate-tab" data-tab="validate">Validate</button>
-          <button role="tab" aria-selected="false" aria-controls="operate-panel" id="operate-tab" data-tab="operate">Operate</button>
-          <button role="tab" aria-selected="false" aria-controls="improve-panel" id="improve-tab" data-tab="improve">Improve</button>
-        </div>
-        <div class="workflow-panel reveal" id="plan-panel" role="tabpanel" aria-labelledby="plan-tab" data-panel="plan">
-          <div><span class="workflow-label">PLAN</span><h3>Start with risk, not test cases.</h3><p>Translate requirements, architecture and historical incidents into a shared model of what could fail and why it matters.</p><ul class="check-list"><li>Risk workshops and service maps</li><li>Customer-journey prioritisation</li><li>Testability requirements before implementation</li></ul></div>
-          <div class="workflow-visual"><span class="flow-node active">Requirement</span><span class="flow-arrow">→</span><span class="flow-node">Risk model</span><span class="flow-arrow">→</span><span class="flow-node">Test strategy</span></div>
-        </div>
-        <div class="workflow-panel" id="build-panel" role="tabpanel" aria-labelledby="build-tab" data-panel="build" hidden>
-          <div><span class="workflow-label">BUILD</span><h3>Make systems easier to validate.</h3><p>Add observability, test data controls and stable service seams while developers are still shaping the design.</p><ul class="check-list"><li>Test data and environment tooling</li><li>Contract and component test support</li><li>Debuggability built into services</li></ul></div>
-          <div class="workflow-visual"><span class="flow-node active">Code</span><span class="flow-arrow">→</span><span class="flow-node">Testability</span><span class="flow-arrow">→</span><span class="flow-node">Fast feedback</span></div>
-        </div>
-        <div class="workflow-panel" id="validate-panel" role="tabpanel" aria-labelledby="validate-tab" data-panel="validate" hidden>
-          <div><span class="workflow-label">VALIDATE</span><h3>Exercise behaviour, not only happy paths.</h3><p>Run targeted functional, performance, resilience, security and compatibility tests against the risks that matter.</p><ul class="check-list"><li>Change-aware test selection</li><li>Failure injection and load models</li><li>Cross-browser and API journey checks</li></ul></div>
-          <div class="workflow-visual"><span class="flow-node active">Change</span><span class="flow-arrow">→</span><span class="flow-node">Evidence</span><span class="flow-arrow">→</span><span class="flow-node">Decision</span></div>
-        </div>
-        <div class="workflow-panel" id="operate-panel" role="tabpanel" aria-labelledby="operate-tab" data-panel="operate" hidden>
-          <div><span class="workflow-label">OPERATE</span><h3>Keep validating after deployment.</h3><p>Use synthetic journeys and production telemetry to verify that customer experience matches pre-release expectations.</p><ul class="check-list"><li>Live journey health</li><li>Release comparison and anomaly detection</li><li>Fast evidence during incidents</li></ul></div>
-          <div class="workflow-visual"><span class="flow-node active">Deploy</span><span class="flow-arrow">→</span><span class="flow-node">Observe</span><span class="flow-arrow">→</span><span class="flow-node">Protect</span></div>
-        </div>
-        <div class="workflow-panel" id="improve-panel" role="tabpanel" aria-labelledby="improve-tab" data-panel="improve" hidden>
-          <div><span class="workflow-label">IMPROVE</span><h3>Turn every failure into a stronger system.</h3><p>Capture patterns, reduce flaky automation and feed real production learning back into architecture and test strategy.</p><ul class="check-list"><li>Failure pattern analysis</li><li>Quality debt ownership</li><li>Reusable engineering playbooks</li></ul></div>
-          <div class="workflow-visual"><span class="flow-node active">Learn</span><span class="flow-arrow">→</span><span class="flow-node">Prioritise</span><span class="flow-arrow">→</span><span class="flow-node">Improve</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Customer proof -->
-    <section class="section proof-section" id="resources" aria-labelledby="proof-title">
-      <div class="container">
-        <div class="proof-panel proof-card reveal">
-          <div class="quote-mark" aria-hidden="true">“</div>
-          <blockquote>
-            We stopped debating release quality from separate dashboards. SDETFlow gave developers, SDETs and product teams one evidence trail — and made the riskiest work visible before it became an incident.
-          </blockquote>
-          <div class="proof-author quote-author"><span class="proof-author-avatar author-avatar">AK</span><div><strong>Alex Kim</strong><span>Director of Quality Engineering, Northstar</span></div></div>
-          <div class="proof-stats proof-metrics">
-            <div><strong data-counter="42">0</strong><span>% fewer escaped defects</span></div>
-            <div><strong data-counter="31">0</strong><span>% faster release decisions</span></div>
-            <div><strong data-counter="58">0</strong><span>% less flaky-test triage</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Security -->
-    <section class="section security-section" id="security" aria-labelledby="security-title">
-      <div class="container security-layout security-grid">
-        <div class="security-copy-block security-copy reveal">
-          <span class="kicker">SECURE BY DESIGN</span>
-          <h2 id="security-title">Quality evidence is sensitive. Treat it that way.</h2>
-          <p>Enterprise controls keep test data, production context and release decisions protected without slowing teams down.</p>
-          <div class="security-feature-list security-list">
-            <div><span>✓</span><strong>Role-based access</strong><small>Granular permissions for teams, services and environments.</small></div>
-            <div><span>✓</span><strong>Audit-ready decisions</strong><small>Trace policies, evidence, overrides and approvals.</small></div>
-            <div><span>✓</span><strong>Private connectivity</strong><small>Connect internal systems without exposing them publicly.</small></div>
-          </div>
-        </div>
-        <div class="security-visual-block security-visual reveal">
-          <div class="shield-ring ring-one"></div><div class="shield-ring ring-two"></div>
-          <div class="shield-core"><svg viewBox="0 0 80 92"><path d="M40 4 72 17v24c0 22-12.8 38-32 47C20.8 79 8 63 8 41V17L40 4Z"/><path d="m25 44 10 10 21-24"/></svg><span>Protected</span></div>
-          <span class="security-chip chip-one">SSO</span><span class="security-chip chip-two">SCIM</span><span class="security-chip chip-three">Audit logs</span><span class="security-chip chip-four">Encryption</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to action -->
-    <section class="section cta-section" id="demo" aria-labelledby="cta-title">
-      <div class="container">
-        <div class="cta-panel cta-card reveal">
-          <div class="cta-background-pattern cta-pattern" aria-hidden="true"></div>
-          <span class="kicker light">START WITH ONE SERVICE. SCALE WHEN READY.</span>
-          <h2 id="cta-title">Ready to transform your quality stack?</h2>
-          <p>Connect your first pipeline, define a critical journey, and see release confidence in minutes.</p>
-          <div class="cta-action-group cta-actions">
-            <a class="button button-light" href="mailto:hello@sdetflow.example?subject=SDETFlow%20free%20workspace">Create free workspace</a>
-            <a class="button button-dark" href="mailto:hello@sdetflow.example?subject=SDETFlow%20demo">Book a demo</a>
-          </div>
-          <small>No credit card · 14-day enterprise trial · Cancel anytime</small>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 3 33 10.5v15L20 33 7 25.5v-15L20 3Z" fill="url(#footerGradient)"/><path d="M14.4 13.2h11.2v4.2h-7v2.1h5.9v4h-5.9v3.3h-4.2V13.2Z" fill="#fff"/><defs><linearGradient id="footerGradient" x1="7" y1="5" x2="35" y2="35"><stop stop-color="#A657C4"/><stop offset=".5" stop-color="#C34B7D"/><stop offset="1" stop-color="#F16759"/></linearGradient></defs></svg></span><span>SDET<span>Flow</span></span></a>
-        <p>Quality engineering signals for teams that build, test and operate modern software.</p>
-      </div>
-      <div><h3>Platform</h3><a href="#platform">Overview</a><a href="#capabilities">Capabilities</a><a href="#integrations">Integrations</a><a href="#security">Security</a></div>
-      <div><h3>Solutions</h3><a href="#capabilities">Release confidence</a><a href="#capabilities">Synthetic monitoring</a><a href="#capabilities">Resilience testing</a><a href="#capabilities">Test intelligence</a></div>
-      <div><h3>Resources</h3><a href="#resources">Customer stories</a><a href="#workflow-title">Quality workflow</a><a href="#demo">Documentation</a><a href="#demo">Contact</a></div>
+    <div class="portrait-copy portrait-right">
+      <span class="label">EXPLORING WHAT COMES NEXT</span>
+      <h2>&lt;AI &amp; cloud&gt;</h2>
+      <p>Growing in platform engineering,<br>cloud architecture and<br>AI-powered development.</p>
+      <a href="#projects">Inside my notebook &#8594;</a>
     </div>
-    <div class="container footer-bottom"><span>© 2026 SDETFlow. Concept landing page.</span><div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Status</a></div></div>
-  </footer>
-
-  <script src="assets/js/app.js" defer></script>
+    <div class="portrait-credit">ZANETE / SOFTWARE ENGINEER</div>
+  </section>
+  <section class="hero-statement wrap">
+    <span class="label">SOFTWARE ENGINEER | CLOUD &amp; PLATFORM ENGINEERING | AI-DRIVEN DEVELOPMENT</span>
+    <h2>Building reliable software, scalable systems,<br>and <em>AI-powered solutions.</em></h2>
+    <p>Software Engineer with experience in backend development, cloud infrastructure, distributed systems, and test automation. Currently expanding my expertise in platform engineering, cloud architecture, and AI-powered software development.</p>
+  </section>
+  <div class="ticker">BACKEND ENGINEERING <span>+</span> CLOUD &amp; DISTRIBUTED SYSTEMS <span>+</span> AI &amp; AUTOMATION</div>
+  <section class="about wrap section" id="about" aria-labelledby="about-title">
+    <div><span class="label">01 / ABOUT ME</span><h2 id="about-title">Engineering today.<br><em>Building toward tomorrow.</em></h2></div>
+    <div>
+      <p class="lead">I'm a Software Engineer with hands-on experience building and maintaining production systems using Java, Kotlin, TypeScript, Spring Boot, and AWS.</p>
+      <p>My background includes microservices, API integrations, event-driven architectures, cloud infrastructure, CI/CD, observability, and software quality engineering.</p>
+      <p>I currently work across engineering and test automation, developing internal tools and improving the reliability and testability of complex systems.</p>
+      <p>I'm particularly interested in how AI is transforming software engineering, from AI-assisted development to intelligent automation and AI-enabled applications.</p>
+      <p>My professional direction is to grow into Cloud &amp; Platform Architecture, combining strong software engineering fundamentals with cloud infrastructure, security, system design, and practical AI integration.</p>
+    </div>
+  </section>
+  <section class="projects section" id="skills" aria-labelledby="skills-title"><div class="wrap">
+    <span class="label">02 / CORE EXPERTISE</span><h2 id="skills-title">A practical foundation.<br><em>A deliberate next step.</em></h2>
+    <p>Hands-on engineering experience, alongside clearly identified areas of ongoing development.</p>
+    <div class="expertise-grid">
+      <article><span class="status">HANDS-ON EXPERIENCE</span><h3>Backend Engineering</h3><p>Java, Kotlin, TypeScript, Spring Boot, REST APIs, microservices.</p></article>
+      <article><span class="status">HANDS-ON EXPERIENCE</span><h3>Cloud &amp; Infrastructure</h3><p>AWS, Docker, ECS, Lambda, SQS/SNS, RDS.</p></article>
+      <article><span class="status">HANDS-ON EXPERIENCE</span><h3>Distributed Systems</h3><p>Event-driven architecture, API integrations, system reliability.</p></article>
+      <article><span class="status">HANDS-ON EXPERIENCE</span><h3>Engineering Quality</h3><p>Test automation, integration testing, CI/CD, observability.</p></article>
+      <article class="developing"><span class="status">DEVELOPING &amp; EXPLORING</span><h3>AI &amp; Automation</h3><p>AI-assisted development, workflow automation, AI-enabled applications.</p></article>
+      <article class="developing"><span class="status">CURRENT LEARNING FOCUS</span><h3>Platform &amp; Architecture</h3><p>Platform Engineering, Cloud Architecture, Security, System Design.</p></article>
+    </div>
+  </div></section>
+  <section class="wrap section" id="experience" aria-labelledby="experience-title">
+    <span class="label">03 / EXPERIENCE</span><h2 id="experience-title">Working across<br><em>the engineering lifecycle.</em></h2>
+    <p class="section-description">An overview of my current work and hands-on engineering background.</p>
+    <div class="steps">
+      <article><span>01 / PRODUCTION SYSTEMS</span><h3>Backend &amp; integrations.</h3><p>Building and maintaining production services using Java, Kotlin, TypeScript and Spring Boot, including microservices and API integrations.</p></article>
+      <article><span>02 / CLOUD &amp; DELIVERY</span><h3>Connected infrastructure.</h3><p>Working with AWS infrastructure, event-driven systems, CI/CD and observability to support complex software systems.</p></article>
+      <article><span>03 / RELIABILITY &amp; TOOLING</span><h3>Confidence in every change.</h3><p>Developing internal tools and test automation, improving integration testing, reliability and testability across engineering workflows.</p></article>
+    </div>
+  </section>
+  <section class="projects section" id="projects" aria-labelledby="projects-title"><div class="wrap">
+    <span class="label">04 / PROJECTS</span><h2 id="projects-title">An evolving<br><em>engineering notebook.</em></h2>
+    <p>Areas I am exploring. Detailed project case studies will be added as they are ready to share.</p>
+    <div class="cards">
+      <article><div class="art terminal" aria-hidden="true"><div><small>~/engineering-notebook</small><code>&gt; design_service()<br>&gt; connect_events()<br>&gt; observe_behaviour()<br><br><strong>learn. build. iterate.</strong></code></div></div><span class="label">EXPLORATION / CLOUD &amp; PLATFORMS</span><h3>Reliable systems, by design.</h3><p>Exploring secure, scalable cloud systems and the platform foundations that help engineering teams deliver reliably.</p><div class="tags">AWS / Platform Engineering / System Design</div></article>
+      <article><div class="art data" aria-hidden="true"><div><small>WORKFLOW INPUT &#8595;</small><div class="row"></div><div class="row"></div><div class="row"></div><strong>Connect. Automate. Improve.</strong></div></div><span class="label">EXPLORATION / AI &amp; AUTOMATION</span><h3>Practical intelligence.</h3><p>Exploring AI-assisted development, intelligent workflows and practical AI integration in software applications.</p><div class="tags">AI-assisted Development / Automation / Integrations</div></article>
+    </div>
+  </div></section>
+  <section class="wrap section direction" aria-labelledby="direction-title"><span class="label">05 / PROFESSIONAL DIRECTION</span><h2 id="direction-title">From Software Engineering to<br><em>Cloud, Platform &amp; AI Architecture.</em></h2><p class="lead">I aim to design and build secure, scalable, resilient systems that combine traditional software engineering with modern cloud platforms and AI capabilities.</p><p>This is the direction I am growing toward, grounded in my current experience as a Software Engineer.</p></section>
+  <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="wrap"><span class="label">06 / CONTACT</span><h2 id="contact-title">Let's build<br><em>what comes next.</em></h2><p>Connect with me about software engineering, cloud platforms and practical AI development.</p><a class="button" href="https://github.com/ZaneteHirona">Connect on GitHub &#8599;</a></div></section>
+</main>
+<footer class="wrap"><a class="brand" href="#main">zanete<span>_</span></a><span>Software engineering. Continuous learning.</span><a href="#main">Back to top &#8593;</a></footer>
+<button id="chat-toggle" type="button" aria-controls="chat" aria-expanded="false">Ask about me &#8599;</button>
+<section id="chat" aria-labelledby="chat-title" hidden>
+<div class="chat-head"><h2 id="chat-title">Portfolio assistant</h2><button id="chat-close" aria-label="Close assistant" type="button">&#215;</button></div>
+<p class="chat-note">Guided answers from this portfolio. Not live AI. Messages are not sent to Zanete.</p>
+<div id="chat-log" role="log" aria-live="polite" aria-relevant="additions"><p>Hi! Ask about technologies, experience, projects, current focus or contact.</p></div>
+<div id="chat-options"><button type="button">Technologies</button><button type="button">Experience</button><button type="button">Current focus</button><button type="button">Contact</button></div>
+<form id="chat-form"><label for="chat-input">Your question</label><div><input id="chat-input" maxlength="400" required placeholder="Ask about my experience..."><button type="submit">Send</button></div></form>
+</section>
+<link rel="stylesheet" href="assets/css/chat.css">
+<script src="assets/js/portfolio-chat.js" defer></script>
 </body>
 </html>
