@@ -22,26 +22,19 @@ Then visit `http://localhost:8080`.
 
 ## Structure
 
-- `index.html` - semantic page structure and original SDET-focused content
-- `assets/css/styles.css` - stylesheet entry point that imports the CSS layers
-- `assets/css/base.css` - tokens, reset, layout primitives and shared typography
-- `assets/css/components.css` - reusable UI pieces such as buttons, cards and tabs
-- `assets/css/sections.css` - page-section styling for hero, features, proof, security and footer
-- `assets/css/responsive.css` - breakpoints and reduced-motion behavior
-- `assets/js/app.js` - mobile menu, accessible tabs, reveal animations and counters
+- `index.html` - semantic page structure and content
+- `assets/css/portfolio.css` - shared tokens, reset, layout and section styling
+- `assets/css/profile.css` - portrait hero and monochrome theme overrides
+- `assets/css/chat.css` - portfolio assistant widget
+- `assets/js/portfolio-chat.js` - guided portfolio assistant (no network calls)
+- `assets/portrait-black-shirt.png` - hero portrait
 - `assets/favicon.svg` - project favicon
 
 ## Suggested conventions
 
 - Keep page structure and content in `index.html`.
-- Keep major HTML areas grouped with section markers so the one-page layout stays easy to scan.
-- Prefer section-prefixed class aliases such as `platform-*`, `capabilities-*`, `integrations-*`, `proof-*`, `security-*` and `cta-*` when touching markup.
-- Keep shared styling primitives in `assets/css/base.css`.
-- Keep reusable UI styles in `assets/css/components.css`.
-- Keep section-specific styling in `assets/css/sections.css`.
-- Keep breakpoints and motion fallbacks in `assets/css/responsive.css`.
-- Keep JavaScript behavior split into small init functions in `assets/js/app.js`.
-- Keep interaction logic in `assets/js/`.
+- Keep shared styling in `portfolio.css`, and prefer editing it over adding overrides in `profile.css`.
+- Keep chat widget styles in `chat.css` and behavior in `portfolio-chat.js`.
 - Keep icons and static media in `assets/`.
 
 ## Notes
