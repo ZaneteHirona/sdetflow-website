@@ -14,7 +14,7 @@
     [/contact|github|email|linkedin|hire|available|disponib|contrat/, 'Connect through GitHub: https://github.com/ZaneteHirona. Email, LinkedIn and availability are not provided here. This chat does not send messages to Zanete.'],
     [/about|who|quien|sobre|zanete/, 'Zanete is a Software Engineer with experience in backend development, cloud infrastructure, distributed systems and engineering quality, growing toward cloud platforms and practical AI integration.']
   ];
-  function open(value) {
+  function setOpen(value) {
     panel.hidden = !value;
     toggle.setAttribute('aria-expanded', String(value));
     (value ? input : toggle).focus();
@@ -28,16 +28,17 @@
     log.scrollTop = log.scrollHeight;
   }
   function ask(question) {
-    if (!question.trim()) return;
-    append(question.trim(), true);
-    const text = question.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const q = question.trim();
+    if (!q) return;
+    append(q, true);
+    const text = q.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     const topic = topics.find(([pattern]) => pattern.test(text));
     append(topic ? topic[1] : 'I do not have that information in the portfolio. Ask about technologies, experience, cloud, projects, current focus or contact. For other questions, connect with Zanete on GitHub.');
     input.value = '';
   }
-  toggle.addEventListener('click', () => open(panel.hidden));
-  document.querySelector('#chat-close').addEventListener('click', () => open(false));
-  panel.addEventListener('keydown', (e) => { if (e.key === 'Escape') open(false); });
+  toggle.addEventListener('click', () => setOpen(panel.hidden));
+  document.querySelector('#chat-close').addEventListener('click', () => setOpen(false));
+  panel.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
   document.querySelector('#chat-form').addEventListener('submit', (e) => {
     e.preventDefault();
     ask(input.value);
