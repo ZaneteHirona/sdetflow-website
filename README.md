@@ -12,6 +12,12 @@ Option 2: serve the folder locally:
 python -m http.server 8080
 ```
 
+On Windows, `python` may not be on your PATH. Use the Python launcher instead:
+
+```powershell
+py -m http.server 8080
+```
+
 Then visit `http://localhost:8080`.
 
 ## Structure
